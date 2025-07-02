@@ -4,7 +4,11 @@ body {
 	Learn more
 	Don't show
 	: #333;
-	    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+	background: url(../imgs/fondo-header.png) no-repeat;
+    background-position: top;
+    background-position-y: -115px;
+    background-size: contain;
 }
 .parallax {
     background-image: url('../imgs/fondo01.jpg'); 
@@ -34,8 +38,37 @@ h2, h3, h4 {
 .nav-link:hover {
 	color: #B2D659;
 }
+
+.container-fluid.footer {
+	min-height: 566px;
+	background: url(../imgs/fondo-footer.png) no-repeat;
+	background-position: top left;
+	background-size: cover;
+	background-position-y: -40px;
+}
+.texto_verde {
+	color: #85a148;
+	text-transform: uppercase;
+}
+
 @media (max-width: 576px) {
   .w-75 {
     width: 95% !important;
+  }
+  body {
+  	background-position-y: 0px;
+  	
+  }
+  .container-fluid.footer{
+  	min-height: 195px;
+  	background-position-y: 0px;
+  	background-position: top left;
+  	background-size: cover;
+  }
+  .parallax {
+  	min-height: 250px;
+  	background-size: 200%;
+  	min-height: 340px;
+  	background-attachment: inherit;
   }
 }
