@@ -52,6 +52,10 @@ h2, h3, h4 {
 }
 
 @media (max-width: 576px) {
+	strong.lowline {
+		line-height: 1.3rem;
+	}
+  
   .w-75 {
     width: 95% !important;
   }
